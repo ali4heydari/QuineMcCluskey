@@ -4,214 +4,199 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="QuineMcCluskey" MinHeight="450" MinWidth="800">
+        Title="QuineMcCluskey" Height="450" Width="800" ResizeMode="NoResize">
     <Grid Margin="2">
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="8*"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="8*" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Margin="2">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="1.5*"/>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="1.5*" />
             </Grid.ColumnDefinitions>
             <GroupBox Grid.Column="0" Margin="2">
                 <GroupBox.Header>Variables</GroupBox.Header>
-                <Grid  VerticalAlignment="Center">
+                <Grid VerticalAlignment="Center">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <Label Margin="2" Grid.Column="0" Content="Number of variables:"/>
-                    <ComboBox SelectedIndex="0" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center" Margin="2" Grid.Column="1" MinWidth="50">
-                        <Label Content="2"/>
-                        <Label Content="3"/>
-                        <Label Content="4"/>
-                        <Label Content="5"/>
-                        <Label Content="6"/>
+                    <Label Margin="2" Grid.Column="0" Content="Number of variables:" />
+                    <ComboBox SelectedIndex="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
+                              Margin="2" Grid.Column="1" MinWidth="50">
+                        <Label Content="2" />
+                        <Label Content="3" />
+                        <Label Content="4" />
+                        <Label Content="5" />
+                        <Label Content="6" />
                     </ComboBox>
-                    <Button Margin="2" Grid.Column="2" MinWidth="50" Content="Simplify"/>
+                    <Button Margin="2" Grid.Column="2" MinWidth="50" Content="Simplify" />
                 </Grid>
             </GroupBox>
             <GroupBox Grid.Column="1" Margin="2">
                 <GroupBox.Header>Function</GroupBox.Header>
-                <Label VerticalAlignment="Center" HorizontalAlignment="Left" Content="output"></Label>
+                <Label VerticalAlignment="Center" HorizontalAlignment="Left" Content="output" />
             </GroupBox>
         </Grid>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
                 <Grid Margin="2">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    <Grid/>
+                    <Grid />
                     <Grid Grid.Column="0" Grid.Row="0" Margin="4">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
-                        <Button Grid.Row="0" Grid.Column="0" Margin="2"></Button>
-                        <Button Grid.Row="1" Grid.Column="0" Margin="2"></Button>
-                        <Button Grid.Row="2" Grid.Column="0" Margin="2"></Button>
-                        <Button Grid.Row="3" Grid.Column="0" Margin="2"></Button>
-                        <Button Grid.Row="0" Grid.Column="1" Margin="2"></Button>
-                        <Button Grid.Row="1" Grid.Column="1" Margin="2"></Button>
-                        <Button Grid.Row="2" Grid.Column="1" Margin="2"></Button>
-                        <Button Grid.Row="3" Grid.Column="1" Margin="2"></Button>
-                        <Button Grid.Row="0" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="1" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="2" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="3" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="0" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="1" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="2" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="3" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="0" Grid.Column="3" Margin="2"></Button>
-                        <Button Grid.Row="1" Grid.Column="3" Margin="2"></Button>
-                        <Button Grid.Row="2" Grid.Column="3" Margin="2"></Button>
-                        <Button Grid.Row="3" Grid.Column="3" Margin="2"></Button>
+                        <Button Grid.Row="0" Grid.Column="0" Name="BtnMinterm0" Content="0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="1" Grid.Column="0" Name="BtnMinterm1" Content="1" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="2" Grid.Column="0" Name="BtnMinterm3" Content="3" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="3" Grid.Column="0" Name="BtnMinterm2" Content="2" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="0" Grid.Column="1" Name="BtnMinterm4" Content="4" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="1" Grid.Column="1" Name="BtnMinterm5" Content="5" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="2" Grid.Column="1" Name="BtnMinterm7" Content="7" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="3" Grid.Column="1" Name="BtnMinterm6" Content="6" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="0" Grid.Column="2" Name="BtnMinterm12" Content="12" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="1" Grid.Column="2" Name="BtnMinterm13" Content="13" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="2" Grid.Column="2" Name="BtnMinterm15" Content="15" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="3" Grid.Column="2" Name="BtnMinterm14" Content="14" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="0" Grid.Column="3" Name="BtnMinterm8" Content="8" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="1" Grid.Column="3" Name="BtnMinterm9" Content="9" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="2" Grid.Column="3" Name="BtnMinterm11" Content="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="3" Grid.Column="3" Name="BtnMinterm10" Content="10" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
                     </Grid>
                     <Grid Grid.Column="0" Grid.Row="1" Margin="4">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
-                        <Button Grid.Row="0" Grid.Column="0" Margin="2"></Button>
-                        <Button Grid.Row="1" Grid.Column="0" Margin="2"></Button>
-                        <Button Grid.Row="2" Grid.Column="0" Margin="2"></Button>
-                        <Button Grid.Row="3" Grid.Column="0" Margin="2"></Button>
-                        <Button Grid.Row="0" Grid.Column="1" Margin="2"></Button>
-                        <Button Grid.Row="1" Grid.Column="1" Margin="2"></Button>
-                        <Button Grid.Row="2" Grid.Column="1" Margin="2"></Button>
-                        <Button Grid.Row="3" Grid.Column="1" Margin="2"></Button>
-                        <Button Grid.Row="0" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="1" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="2" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="3" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="0" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="1" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="2" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="3" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="0" Grid.Column="3" Margin="2"></Button>
-                        <Button Grid.Row="1" Grid.Column="3" Margin="2"></Button>
-                        <Button Grid.Row="2" Grid.Column="3" Margin="2"></Button>
-                        <Button Grid.Row="3" Grid.Column="3" Margin="2"></Button>
+                        <Button Grid.Row="0" Grid.Column="0" Name="BtnMinterm32" Content="32" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="1" Grid.Column="0" Name="BtnMinterm33" Content="33" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="2" Grid.Column="0" Name="BtnMinterm35" Content="35" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="3" Grid.Column="0" Name="BtnMinterm34" Content="34" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="0" Grid.Column="1" Name="BtnMinterm36" Content="36" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="1" Grid.Column="1" Name="BtnMinterm37" Content="37" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="2" Grid.Column="1" Name="BtnMinterm39" Content="39" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="3" Grid.Column="1" Name="BtnMinterm38" Content="38" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="0" Grid.Column="2" Name="BtnMinterm44" Content="44" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="1" Grid.Column="2" Name="BtnMinterm45" Content="45" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="2" Grid.Column="2" Name="BtnMinterm47" Content="47" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="3" Grid.Column="2" Name="BtnMinterm46" Content="46" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="0" Grid.Column="3" Name="BtnMinterm40" Content="40" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="1" Grid.Column="3" Name="BtnMinterm41" Content="41" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="2" Grid.Column="3" Name="BtnMinterm43" Content="43" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="3" Grid.Column="3" Name="BtnMinterm42" Content="42" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
                     </Grid>
                     <Grid Grid.Column="1" Grid.Row="0" Margin="4">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
-                        <Button Grid.Row="0" Grid.Column="0" Margin="2"></Button>
-                        <Button Grid.Row="1" Grid.Column="0" Margin="2"></Button>
-                        <Button Grid.Row="2" Grid.Column="0" Margin="2"></Button>
-                        <Button Grid.Row="3" Grid.Column="0" Margin="2"></Button>
-                        <Button Grid.Row="0" Grid.Column="1" Margin="2"></Button>
-                        <Button Grid.Row="1" Grid.Column="1" Margin="2"></Button>
-                        <Button Grid.Row="2" Grid.Column="1" Margin="2"></Button>
-                        <Button Grid.Row="3" Grid.Column="1" Margin="2"></Button>
-                        <Button Grid.Row="0" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="1" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="2" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="3" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="0" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="1" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="2" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="3" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="0" Grid.Column="3" Margin="2"></Button>
-                        <Button Grid.Row="1" Grid.Column="3" Margin="2"></Button>
-                        <Button Grid.Row="2" Grid.Column="3" Margin="2"></Button>
-                        <Button Grid.Row="3" Grid.Column="3" Margin="2"></Button>
+                        <Button Grid.Row="0" Grid.Column="0" Name="BtnMinterm24" Content="24" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="1" Grid.Column="0" Name="BtnMinterm25" Content="25" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="2" Grid.Column="0" Name="BtnMinterm27" Content="27" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="3" Grid.Column="0" Name="BtnMinterm26" Content="26" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="0" Grid.Column="1" Name="BtnMinterm28" Content="28" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="1" Grid.Column="1" Name="BtnMinterm29" Content="29" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="2" Grid.Column="1" Name="BtnMinterm31" Content="31" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="3" Grid.Column="1" Name="BtnMinterm30" Content="30" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="0" Grid.Column="2" Name="BtnMinterm20" Content="20" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="1" Grid.Column="2" Name="BtnMinterm21" Content="21" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="2" Grid.Column="2" Name="BtnMinterm23" Content="23" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="3" Grid.Column="2" Name="BtnMinterm22" Content="22" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="0" Grid.Column="3" Name="BtnMinterm16" Content="16" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="1" Grid.Column="3" Name="BtnMinterm17" Content="17" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="2" Grid.Column="3" Name="BtnMinterm19" Content="19" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="3" Grid.Column="3" Name="BtnMinterm18" Content="18" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
                     </Grid>
                     <Grid Grid.Column="1" Grid.Row="1" Margin="4">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
-                        <Button Grid.Row="0" Grid.Column="0" Margin="2"></Button>
-                        <Button Grid.Row="1" Grid.Column="0" Margin="2"></Button>
-                        <Button Grid.Row="2" Grid.Column="0" Margin="2"></Button>
-                        <Button Grid.Row="3" Grid.Column="0" Margin="2"></Button>
-                        <Button Grid.Row="0" Grid.Column="1" Margin="2"></Button>
-                        <Button Grid.Row="1" Grid.Column="1" Margin="2"></Button>
-                        <Button Grid.Row="2" Grid.Column="1" Margin="2"></Button>
-                        <Button Grid.Row="3" Grid.Column="1" Margin="2"></Button>
-                        <Button Grid.Row="0" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="1" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="2" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="3" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="0" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="1" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="2" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="3" Grid.Column="2" Margin="2"></Button>
-                        <Button Grid.Row="0" Grid.Column="3" Margin="2"></Button>
-                        <Button Grid.Row="1" Grid.Column="3" Margin="2"></Button>
-                        <Button Grid.Row="2" Grid.Column="3" Margin="2"></Button>
-                        <Button Grid.Row="3" Grid.Column="3" Margin="2"></Button>
+                        <Button Grid.Row="0" Grid.Column="0" Name="BtnMinterm024" Content="56" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="1" Grid.Column="0" Name="BtnMinterm025" Content="57" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="2" Grid.Column="0" Name="BtnMinterm027" Content="59" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="3" Grid.Column="0" Name="BtnMinterm026" Content="58" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="0" Grid.Column="1" Name="BtnMinterm028" Content="60" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="1" Grid.Column="1" Name="BtnMinterm029" Content="61" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="2" Grid.Column="1" Name="BtnMinterm031" Content="63" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="3" Grid.Column="1" Name="BtnMinterm030" Content="62" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="0" Grid.Column="2" Name="BtnMinterm020" Content="52" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="1" Grid.Column="2" Name="BtnMinterm021" Content="53" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="2" Grid.Column="2" Name="BtnMinterm023" Content="55" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="3" Grid.Column="2" Name="BtnMinterm022" Content="54" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="0" Grid.Column="3" Name="BtnMinterm016" Content="48" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="1" Grid.Column="3" Name="BtnMinterm017" Content="49" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="2" Grid.Column="3" Name="BtnMinterm019" Content="51" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="3" Grid.Column="3" Name="BtnMinterm018" Content="50" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
                     </Grid>
                 </Grid>
-                <StatusBar Grid.Row="1" MinHeight="20"/>
+                <StatusBar Grid.Row="1" MinHeight="20" />
             </Grid>
             <Grid Grid.Column="1" Margin="2">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                
+
             </Grid>
         </Grid>
-        
+
     </Grid>
 </Window>
