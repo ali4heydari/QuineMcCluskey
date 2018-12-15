@@ -56,6 +56,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="LogicState.cs" />
+    <Compile Include="PrimeImplicant.cs" />
     <Compile Include="TruthTable.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
