@@ -1,7 +1,6 @@
 ﻿namespace QuineMcCluskey
 {
     public enum LogicState : byte
-
     {
         False = 0,
         True = 1,

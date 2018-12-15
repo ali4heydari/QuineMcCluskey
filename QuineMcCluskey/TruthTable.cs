@@ -11,30 +11,26 @@ namespace QuineMcCluskey
 
         public TruthTable(string[] titles, List<List<LogicState>> inputStates, List<LogicState> outputStates)
         {
-            this.Titles = titles;
-            this.InputStates = inputStates;
-            this.OutputStates = outputStates;
+            Titles = titles;
+            InputStates = inputStates;
+            OutputStates = outputStates;
         }
 
         public void SetInputStates(List<List<LogicState>> newStates)
         {
-            this.InputStates = newStates;
+            InputStates = newStates;
         }
 
         public void SetOutputStates(List<LogicState> newStates)
         {
-            this.OutputStates = newStates;
+            OutputStates = newStates;
         }
 
         public void SetOutputStatesToTrue()
         {
             int count = InputStates.Count;
-            this.OutputStates = new List<LogicState>();
-            for (int i = 0; i < count; i++)
-            {
-                this.OutputStates.Add(LogicState.True);
-            }
+            OutputStates = new List<LogicState>();
+            for (int i = 0; i < count; i++) OutputStates.Add(LogicState.True);
         }
-
     }
 }

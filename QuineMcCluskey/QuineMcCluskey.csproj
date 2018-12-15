@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BooleanAlgebra.cs" />
     <Compile Include="LogicState.cs" />
     <Compile Include="PrimeImplicant.cs" />
     <Compile Include="TruthTable.cs" />
