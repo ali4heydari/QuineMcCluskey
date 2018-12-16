@@ -29,12 +29,23 @@ namespace QuineMcCluskey
         private void BtnMinterm_Click(object sender, RoutedEventArgs e)
         {
             Button mintermButton = (Button) (sender);
-                
-
-
+            switch (mintermButton.Content.ToString())
+            {
+                case "D":
+                    ToggleMintermButtonContent(mintermButton, "1");
+                    break;
+                case "1":
+                    ToggleMintermButtonContent(mintermButton, "0");
+                    break;
+                case "0":
+                    ToggleMintermButtonContent(mintermButton, "D");
+                    break;
+            }
         }
 
-        
-
+        private void ToggleMintermButtonContent(Button mintermButton, string newValue)
+        {
+            Dispatcher.Invoke(new Action((() => { mintermButton.Content = newValue; })));
+        }
     }
 }
