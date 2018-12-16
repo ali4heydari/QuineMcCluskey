@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,5 +25,16 @@ namespace QuineMcCluskey
         {
             InitializeComponent();
         }
+
+        private void BtnMinterm_Click(object sender, RoutedEventArgs e)
+        {
+            Button mintermButton = (Button) (sender);
+                
+
+
+        }
+
+        
+
     }
 }

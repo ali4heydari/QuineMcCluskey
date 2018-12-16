@@ -7,15 +7,15 @@
         Title="QuineMcCluskey" Height="600" Width="430" ResizeMode="NoResize">
     <Grid Margin="2">
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="8*" />
-            <RowDefinition Height="2*" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Margin="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <GroupBox Grid.Column="0" Margin="2">
+            <GroupBox Grid.Column="0" Margin="2" Padding="0,5,0,5">
                 <GroupBox.Header>Variables</GroupBox.Header>
                 <Grid VerticalAlignment="Center">
                     <Grid.ColumnDefinitions>
@@ -69,7 +69,7 @@
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
                         <Button Grid.Row="0" Grid.Column="0" Name="BtnMinterm0" Content="0"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" Click="BtnMinterm_Click" />
                         <Button Grid.Row="1" Grid.Column="0" Name="BtnMinterm1" Content="1"
                                 HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
                         <Button Grid.Row="2" Grid.Column="0" Name="BtnMinterm3" Content="3"
