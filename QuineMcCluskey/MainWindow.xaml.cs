@@ -36,13 +36,13 @@ namespace QuineMcCluskey
 
         private void DisableAllMintemButton()
         {
-            if (_mintermButtons != null)
-            {
-                this._mintermButtons
-                    .Select(b => b)
-                    .ToList()
-                    .ForEach(b => b.IsEnabled = false);
-            }
+            _mintermButtons?.Select(b => b)
+                .ToList()
+                .ForEach((button =>
+                {
+                    button.Content = "D";
+                    button.IsEnabled = false;
+                }));
         }
 
         private int GetMintermCount(int variableCount)
