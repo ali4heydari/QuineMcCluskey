@@ -24,15 +24,16 @@
                         <ColumnDefinition Width="Auto" />
                     </Grid.ColumnDefinitions>
                     <Label Margin="2" Grid.Column="0" Content="Number of variables:" />
-                    <ComboBox SelectedIndex="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
-                              Margin="2" Grid.Column="1" MinWidth="50">
+                    <ComboBox Name="ComboBoxVariableCount" SelectedIndex="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
+                              Margin="2" Grid.Column="1" MinWidth="50" SelectionChanged="ComboBox_SelectionChanged">
+                        <Label Content="" />
                         <Label Content="2" />
                         <Label Content="3" />
                         <Label Content="4" />
                         <Label Content="5" />
                         <Label Content="6" />
                     </ComboBox>
-                    <Button Padding="20,0,20,0" Margin="2" Grid.Column="2" MinWidth="50" Content="Simplify" />
+                    <Button Name="BtnSimplify" Padding="20,0,20,0" Margin="2" Grid.Column="2" MinWidth="50" Content="Simplify" Click="BtnSimplify_Click" />
                 </Grid>
             </GroupBox>
         </Grid>
