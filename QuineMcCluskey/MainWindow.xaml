@@ -4,25 +4,24 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="QuineMcCluskey" Height="450" Width="800" ResizeMode="NoResize">
+        Title="QuineMcCluskey" Height="600" Width="430" ResizeMode="NoResize">
     <Grid Margin="2">
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="8*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Margin="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="1.5*" />
             </Grid.ColumnDefinitions>
-            <GroupBox Grid.Column="0" Margin="2">
+            <GroupBox Grid.Column="0" Margin="2" Padding="0,5,0,5">
                 <GroupBox.Header>Variables</GroupBox.Header>
                 <Grid VerticalAlignment="Center">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="60" />
+                        <ColumnDefinition Width="Auto" />
                     </Grid.ColumnDefinitions>
                     <Label Margin="2" Grid.Column="0" Content="Number of variables:" />
                     <ComboBox SelectedIndex="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
@@ -33,17 +32,12 @@
                         <Label Content="5" />
                         <Label Content="6" />
                     </ComboBox>
-                    <Button Margin="2" Grid.Column="2" MinWidth="50" Content="Simplify" />
+                    <Button Padding="20,0,20,0" Margin="2" Grid.Column="2" MinWidth="50" Content="Simplify" />
                 </Grid>
-            </GroupBox>
-            <GroupBox Grid.Column="1" Margin="2">
-                <GroupBox.Header>Function</GroupBox.Header>
-                <Label VerticalAlignment="Center" HorizontalAlignment="Left" Content="output" />
             </GroupBox>
         </Grid>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0">
@@ -74,38 +68,38 @@
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
-                        <Button Grid.Row="0" Grid.Column="0" Name="BtnMinterm0" Content="0"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="1" Grid.Column="0" Name="BtnMinterm1" Content="1"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="2" Grid.Column="0" Name="BtnMinterm3" Content="3"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="3" Grid.Column="0" Name="BtnMinterm2" Content="2"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="0" Grid.Column="1" Name="BtnMinterm4" Content="4"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="1" Grid.Column="1" Name="BtnMinterm5" Content="5"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="2" Grid.Column="1" Name="BtnMinterm7" Content="7"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="3" Grid.Column="1" Name="BtnMinterm6" Content="6"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="0" Grid.Column="2" Name="BtnMinterm12" Content="12"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="1" Grid.Column="2" Name="BtnMinterm13" Content="13"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="2" Grid.Column="2" Name="BtnMinterm15" Content="15"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="3" Grid.Column="2" Name="BtnMinterm14" Content="14"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="0" Grid.Column="3" Name="BtnMinterm8" Content="8"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="1" Grid.Column="3" Name="BtnMinterm9" Content="9"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="2" Grid.Column="3" Name="BtnMinterm11" Content="11"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="3" Grid.Column="3" Name="BtnMinterm10" Content="10"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="0" Grid.Column="0" Name="BtnMinterm0" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="1" Grid.Column="0" Name="BtnMinterm1" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click"  />
+                        <Button Grid.Row="2" Grid.Column="0" Name="BtnMinterm3" Content="D"                      
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click"  />
+                        <Button Grid.Row="3" Grid.Column="0" Name="BtnMinterm2" Content="D"                      
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click"  />
+                        <Button Grid.Row="0" Grid.Column="1" Name="BtnMinterm4" Content="D"                      
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click"  />
+                        <Button Grid.Row="1" Grid.Column="1" Name="BtnMinterm5" Content="D"                      
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click"  />
+                        <Button Grid.Row="2" Grid.Column="1" Name="BtnMinterm7" Content="D"                      
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click"  />
+                        <Button Grid.Row="3" Grid.Column="1" Name="BtnMinterm6" Content="D"                      
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click"  />
+                        <Button Grid.Row="0" Grid.Column="2" Name="BtnMinterm12" Content="D"                     
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click"  />
+                        <Button Grid.Row="1" Grid.Column="2" Name="BtnMinterm13" Content="D"                     
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click"  />
+                        <Button Grid.Row="2" Grid.Column="2" Name="BtnMinterm15" Content="D"                     
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click"  />
+                        <Button Grid.Row="3" Grid.Column="2" Name="BtnMinterm14" Content="D"                     
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click"  />
+                        <Button Grid.Row="0" Grid.Column="3" Name="BtnMinterm8" Content="D"                      
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click"  />
+                        <Button Grid.Row="1" Grid.Column="3" Name="BtnMinterm9" Content="D"                      
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click"  />
+                        <Button Grid.Row="2" Grid.Column="3" Name="BtnMinterm11" Content="D"                     
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click"  />
+                        <Button Grid.Row="3" Grid.Column="3" Name="BtnMinterm10" Content="D"                     
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click"  />
                     </Grid>
                     <Grid Grid.Column="0" Grid.Row="1" Margin="4">
                         <Grid.RowDefinitions>
@@ -120,38 +114,38 @@
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
-                        <Button Grid.Row="0" Grid.Column="0" Name="BtnMinterm32" Content="32"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="1" Grid.Column="0" Name="BtnMinterm33" Content="33"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="2" Grid.Column="0" Name="BtnMinterm35" Content="35"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="3" Grid.Column="0" Name="BtnMinterm34" Content="34"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="0" Grid.Column="1" Name="BtnMinterm36" Content="36"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="1" Grid.Column="1" Name="BtnMinterm37" Content="37"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="2" Grid.Column="1" Name="BtnMinterm39" Content="39"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="3" Grid.Column="1" Name="BtnMinterm38" Content="38"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="0" Grid.Column="2" Name="BtnMinterm44" Content="44"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="1" Grid.Column="2" Name="BtnMinterm45" Content="45"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="2" Grid.Column="2" Name="BtnMinterm47" Content="47"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="3" Grid.Column="2" Name="BtnMinterm46" Content="46"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="0" Grid.Column="3" Name="BtnMinterm40" Content="40"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="1" Grid.Column="3" Name="BtnMinterm41" Content="41"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="2" Grid.Column="3" Name="BtnMinterm43" Content="43"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="3" Grid.Column="3" Name="BtnMinterm42" Content="42"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="0" Grid.Column="0" Name="BtnMinterm32" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="1" Grid.Column="0" Name="BtnMinterm33" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="2" Grid.Column="0" Name="BtnMinterm35" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="3" Grid.Column="0" Name="BtnMinterm34" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="0" Grid.Column="1" Name="BtnMinterm36" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="1" Grid.Column="1" Name="BtnMinterm37" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="2" Grid.Column="1" Name="BtnMinterm39" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="3" Grid.Column="1" Name="BtnMinterm38" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="0" Grid.Column="2" Name="BtnMinterm44" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="1" Grid.Column="2" Name="BtnMinterm45" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="2" Grid.Column="2" Name="BtnMinterm47" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="3" Grid.Column="2" Name="BtnMinterm46" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="0" Grid.Column="3" Name="BtnMinterm40" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="1" Grid.Column="3" Name="BtnMinterm41" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="2" Grid.Column="3" Name="BtnMinterm43" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="3" Grid.Column="3" Name="BtnMinterm42" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
                     </Grid>
                     <Grid Grid.Column="1" Grid.Row="0" Margin="4">
                         <Grid.RowDefinitions>
@@ -166,38 +160,38 @@
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
-                        <Button Grid.Row="0" Grid.Column="0" Name="BtnMinterm24" Content="24"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="1" Grid.Column="0" Name="BtnMinterm25" Content="25"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="2" Grid.Column="0" Name="BtnMinterm27" Content="27"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="3" Grid.Column="0" Name="BtnMinterm26" Content="26"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="0" Grid.Column="1" Name="BtnMinterm28" Content="28"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="1" Grid.Column="1" Name="BtnMinterm29" Content="29"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="2" Grid.Column="1" Name="BtnMinterm31" Content="31"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="3" Grid.Column="1" Name="BtnMinterm30" Content="30"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="0" Grid.Column="2" Name="BtnMinterm20" Content="20"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="1" Grid.Column="2" Name="BtnMinterm21" Content="21"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="2" Grid.Column="2" Name="BtnMinterm23" Content="23"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="3" Grid.Column="2" Name="BtnMinterm22" Content="22"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="0" Grid.Column="3" Name="BtnMinterm16" Content="16"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="1" Grid.Column="3" Name="BtnMinterm17" Content="17"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="2" Grid.Column="3" Name="BtnMinterm19" Content="19"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="3" Grid.Column="3" Name="BtnMinterm18" Content="18"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="0" Grid.Column="0" Name="BtnMinterm24" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="1" Grid.Column="0" Name="BtnMinterm25" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="2" Grid.Column="0" Name="BtnMinterm27" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="3" Grid.Column="0" Name="BtnMinterm26" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="0" Grid.Column="1" Name="BtnMinterm28" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="1" Grid.Column="1" Name="BtnMinterm29" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="2" Grid.Column="1" Name="BtnMinterm31" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="3" Grid.Column="1" Name="BtnMinterm30" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="0" Grid.Column="2" Name="BtnMinterm20" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="1" Grid.Column="2" Name="BtnMinterm21" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="2" Grid.Column="2" Name="BtnMinterm23" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="3" Grid.Column="2" Name="BtnMinterm22" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="0" Grid.Column="3" Name="BtnMinterm16" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="1" Grid.Column="3" Name="BtnMinterm17" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="2" Grid.Column="3" Name="BtnMinterm19" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="3" Grid.Column="3" Name="BtnMinterm18" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
                     </Grid>
                     <Grid Grid.Column="1" Grid.Row="1" Margin="4">
                         <Grid.RowDefinitions>
@@ -212,55 +206,46 @@
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
-                        <Button Grid.Row="0" Grid.Column="0" Name="BtnMinterm56" Content="56"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="1" Grid.Column="0" Name="BtnMinterm57" Content="57"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="2" Grid.Column="0" Name="BtnMinterm59" Content="59"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="3" Grid.Column="0" Name="BtnMinterm58" Content="58"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="0" Grid.Column="1" Name="BtnMinterm60" Content="60"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="1" Grid.Column="1" Name="BtnMinterm61" Content="61"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="2" Grid.Column="1" Name="BtnMinterm63" Content="63"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="3" Grid.Column="1" Name="BtnMinterm62" Content="62"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="0" Grid.Column="2" Name="BtnMinterm52" Content="52"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="1" Grid.Column="2" Name="BtnMinterm53" Content="53"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="2" Grid.Column="2" Name="BtnMinterm55" Content="55"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="3" Grid.Column="2" Name="BtnMinterm54" Content="54"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="0" Grid.Column="3" Name="BtnMinterm48" Content="48"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="1" Grid.Column="3" Name="BtnMinterm49" Content="49"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="2" Grid.Column="3" Name="BtnMinterm51" Content="51"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
-                        <Button Grid.Row="3" Grid.Column="3" Name="BtnMinterm50" Content="50"
-                                HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Margin="2" />
+                        <Button Grid.Row="0" Grid.Column="0" Name="BtnMinterm56" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="1" Grid.Column="0" Name="BtnMinterm57" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="2" Grid.Column="0" Name="BtnMinterm59" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="3" Grid.Column="0" Name="BtnMinterm58" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="0" Grid.Column="1" Name="BtnMinterm60" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="1" Grid.Column="1" Name="BtnMinterm61" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="2" Grid.Column="1" Name="BtnMinterm63" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="3" Grid.Column="1" Name="BtnMinterm62" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="0" Grid.Column="2" Name="BtnMinterm52" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="1" Grid.Column="2" Name="BtnMinterm53" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="2" Grid.Column="2" Name="BtnMinterm55" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="3" Grid.Column="2" Name="BtnMinterm54" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="0" Grid.Column="3" Name="BtnMinterm48" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="1" Grid.Column="3" Name="BtnMinterm49" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="2" Grid.Column="3" Name="BtnMinterm51" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
+                        <Button Grid.Row="3" Grid.Column="3" Name="BtnMinterm50" Content="D"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2" Click="BtnMinterm_Click" />
                     </Grid>
                 </Grid>
                 <StatusBar Grid.Row="1" MinHeight="20" />
             </Grid>
-            <Grid Grid.Column="1" Margin="2">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-
-            </Grid>
         </Grid>
-
+        <GroupBox Grid.Row="2" Margin="2">
+            <GroupBox.Header>Function</GroupBox.Header>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Left" Content="output" />
+        </GroupBox>
     </Grid>
 </Window>
