@@ -246,7 +246,7 @@
         </Grid>
         <GroupBox Grid.Row="2" Margin="2">
             <GroupBox.Header>Function</GroupBox.Header>
-            <Label VerticalAlignment="Center" HorizontalAlignment="Left" Content="output" />
+            <Label Name="LblOutput" VerticalAlignment="Center" HorizontalAlignment="Left" Content="output" />
         </GroupBox>
     </Grid>
 </Window>
